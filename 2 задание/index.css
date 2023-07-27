@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+    background: url("bg1.png") no-repeat 60% 0%, url("bg2.png") no-repeat 45% 15%,
+        url("bg3.png") no-repeat 58% 60%, #0E1014;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, main, footer {
+    padding: 3rem 5rem;
+    color: #E4E5EA;
+}
+
+.logo-caption {
+    font-size: 10px;
+    padding-left: 1.5rem;
+}
+
+.phone {
+    margin-left: 5rem;
+}
+
+ul {
+    font-size: 16px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0 2.2%;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icons {
+    margin-left: 1rem;
+}
+
+.social-icons a {
+    padding: 0 0.5rem;
+}
+
+main, footer {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+}
+
+.main-caption {
+    font-size: 48px;
+}
+
+.sub-caption {
+    font-size: 18px;
+}
+
+.gradient {
+    background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(255,63,120,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vert-align {
+    display: flex;
+    align-items: center;
+}
+
+.top-align {
+    display: flex;
+    align-items: top;
+}
+
+.right-main {
+    font-size: 16px;
+}
+
+main button {
+    color:#E4E5EA;
+    padding: 10px 25px;
+    background: #4077F3;
+    cursor: pointer;
+}
+
+footer h4 {
+    color: #656566;
+}
+
+footer a {
+    display: block;
+    padding: 10px 0;
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.small-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.phone, .cert, .logo, .social-icons, .logo-caption {
+    display: inline;
+}
+
+.left-main, .right-main {
+    display:inline-block;
+}
+
+.right-main {
+    text-align:right;
+    margin-left:auto;
+}
+
+.col2-right {
+    margin-left: auto;
+}
+
+.big {
+    display: block;
+}
+
+.small {
+    display: none;
+}
+
+.shift {
+    margin-left: -40px;
+}
+
+#contacts {
+    text-align: right;
+}
+
+.credits {
+    text-align:right;
+    width:100%;
+}
+
+@media (max-width: 1125px) {
+    .phone, .cert, .logo, .social-icons, .logo-caption {
+        display: none;
+    }
+    ul {
+        justify-content: center;
+    }
+    .left-main, .right-main {
+        display: block;
+        text-align: center;
+    }
+    .top-align {
+        display: block;
+    }
+    .col2-right {
+        margin-left: 50px;
+    }
+    .big {
+        display: none;
+    }
+    .small {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    footer .small {
+        display: inline-block;
+        position: relative;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+    .shift {
+        margin-left: 1px;
+    }
+    #contacts {
+        text-align: left;
+    }
+    .credits {
+        text-align: left;
+    }
+}
